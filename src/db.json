@@ -1,0 +1,6 @@
+{
+  "getshopcarlist": [
+    { "id": 87, "title": "华为荣耀","sell_price": 3000},
+    { "id": 88, "title": "iphone6","sell_price": 5000},
+    { "id": 89, "title": "苹果iphoneX","sell_price": 3001}
+]}

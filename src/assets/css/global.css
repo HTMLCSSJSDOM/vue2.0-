@@ -1,0 +1,34 @@
+/*子组件里的元素的样式不能在父组件里进行编辑(只能编辑子组件最外层)，要么进入到相对应的子组件里调整，要么就在全局里进行调整*/
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.news-content img{
+	width: 100%;
+}
+/*preview样式*/
+.my-gallery{
+	width: 100%;
+	height: 300px;
+}
+.my-gallery img{
+	height: 123px;
+	width: 123px;
+}
+figure{
+	float: left;
+	width: 33.33%;
+	margin: 0;
+	padding: 0;
+}
+.tmpl{
+	margin-bottom: 50px;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
