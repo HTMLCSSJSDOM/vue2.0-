@@ -1,8 +1,8 @@
 <template>
    <div>
      <mt-header title="myproject" ref="appHeader"></mt-header>
-    <!-- 所有的进行填坑组件都会复用这个样式     -->
-    <transition name="rv" mode="out-in" >
+    <!-- 所有的进行填坑组件都会复用这个样式 -->
+    <transition name="rv" mode="out-in">
       <!-- 利用refs来让子组件使用父组件中的组件或者元素 -->
       <router-view class='tmpl' :apprefs="$refs" />
     </transition>
@@ -18,7 +18,7 @@
         <mt-tab-item id="shopcar">
           <img @click="changeHash" slot="icon" src="./assets/img/shopcar.png">
           购物车
-          <mt-badge size="small" type="error">{{ this.num }}</mt-badge>
+          <mt-badge size="small" type="error">{{ num }}</mt-badge>
         </mt-tab-item>
         <mt-tab-item id="search">
           <img @click="changeHash" slot="icon" src="./assets/img/search.png">

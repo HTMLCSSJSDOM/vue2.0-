@@ -54,6 +54,10 @@
 					img.h = 300
 				})
 			}).catch(err=>console.log('获取图片缩略图失败',err))
+		},
+		beforeRouterEnter(to,from,next){
+			console.log(to)
+			console.log(from)
 		}
 	}
 </script>

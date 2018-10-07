@@ -66,7 +66,7 @@
 		},
 		created(){
 			this.page = this.$route.query.id  || '1'
-		
+			console.log(1)
 			this.loadGoodList(this.page)
 
 		},
@@ -75,7 +75,17 @@
 			let headerHeight = this.apprefs.appHeader.$el.offsetHeight,
 				tabberHeight = this.apprefs.appTabber.$el.offsetHeight
 				this.boxHeight = document.body.clientHeight - headerHeight - tabberHeight
-		}
+		},
+		watch: {
+        ['$route']() {
+          console.log('there')
+        }
+      },
+      beforeRouterEnter(to,come,next){
+      	next(vm => {
+      		vm.loadGoodList(this.page)
+      	})
+      }
 
 	}
 </script>

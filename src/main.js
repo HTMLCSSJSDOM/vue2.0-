@@ -37,6 +37,7 @@ Axios.interceptors.response.use(function(response){
 	return response
 })
 Vue.use(Mint)  //建立全局组件、挂载相应的属性
+
 Vue.config.productionTip = false
 
 //设置时间中文显示
@@ -50,6 +51,7 @@ Vue.filter('convertTime',function(data,formatStr){
 Vue.filter('relativeTime',function(previousTime){
 	return Moment(previousTime).fromNow()
 })
+
 Vue.component('my-li',MyLi)
 Vue.component('my-ul',MyUl)
 Vue.component(NavBar.name,NavBar)

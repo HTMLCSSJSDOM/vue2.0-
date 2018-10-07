@@ -55,7 +55,6 @@
 		},
 		methods:{
 			loadMore(page){
-				console.log(this.cid)
 				this.$axios.get(`getcomments/${this.cid}?pageindex=${this.page}`).then(res=>{
 					if(res.data.message.length === 0){
 						this.$toast('没有数据了!')

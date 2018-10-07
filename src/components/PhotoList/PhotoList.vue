@@ -38,7 +38,7 @@
 		//路由参数改变，组件复用
 		//1不触发？2重新渲染？
 		beforeRouteUpdate(to,from,next){
-			console.log(to)
+			
 			
 			this.loadImgsByCategoryId(to.params.categoryId)  
 			next()
@@ -79,6 +79,11 @@
 					this.categorys = res.data.message
 					this.categorys.unshift({title: '全部',id: 0})
 				}).catch(err=>console.log(err))
+		},
+		beforeRouteEnter(to,from,next){
+			console.log(to)
+			console.log(from)
+			next()
 		}
 		
 	}

@@ -67,7 +67,7 @@ export default new Router({
     	component: GoodsList
     },
     {
-    	path: 'good/detail/:id',
+    	path: 'good/detail',
     	name: 'goods.detail',
     	component: GoodsDetail
     },

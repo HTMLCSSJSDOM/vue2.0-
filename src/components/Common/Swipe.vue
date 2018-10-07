@@ -18,6 +18,7 @@
 			}
 		},
 		created(){
+			
 			this.$axios.get(this.url).then(res=>{
 				this.imgs = res.data.message
 			}).catch(err=>console.log('首页或者商品详情轮播图获取异常',err))

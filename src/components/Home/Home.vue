@@ -24,15 +24,15 @@ export default {
 			{className:'cms-trade',title:'商品展示',router:{ name: 'goods.list',query:{id: 1}}},
 			{className:'cms-message',title:'留言反馈',router:{ name: 'news.list'}},
 			{className:'cms-search',title:'搜索资讯',router:{ name: 'news.list'}},
-			{className:'cms-contact',title:'联系我们',router:{ name: 'news.list'}}
+			{className:'cms-contact',title:'联系我们',router:{ name: 'news.list'}},
 			]
 		}
 	},
      created(){
           this.$axios.get('getlunbo').then(res=>{
               this.imgs = res.data.message   //res.data返回的才是真的数据
-              console.log(res.data.message)
-              console.log(1)
+             
+            
           }).catch(err=>console.log('can not find data'))
       }
 }

@@ -13,7 +13,7 @@
 						</div>
 					</div>
 				</router-link>
-			</li>
+Udacity			</li>
 		</ul>
 	</div>
 	
@@ -32,6 +32,7 @@
 					this.newsList = res.data.message
 			}).catch(err => console.log('新闻列表异常'))
 		}
+			
 	}
 </script>
 
@@ -39,6 +40,7 @@
 	ul > li > a{
 		display: block;
 	}
+	
 	img{
 		width: 50px;
 		height: 50px;

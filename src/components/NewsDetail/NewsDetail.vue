@@ -33,7 +33,7 @@
 		},*/
 		// 路由确认前,to是运用这个组件的路由,from是从哪个组件来的
 		beforeRouteEnter(to,from,next){
-			console.log(typeof from.name)
+			
 				let title = ''
 				if(from.name === 'null'){
 						if(to.name === 'news.detail'){
